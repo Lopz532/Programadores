@@ -25,3 +25,15 @@ cualquier duda o comentario no duden en preguntar o cualquier error que tenga en
 mi numero personal 9624968442
 
 Es todo.
+
+
+
+💥 Diferencias clave entre Git Bash y PowerShell/CMD
+Acción	En Git Bash (Linux/Unix)	En PowerShell/CMD (Windows)
+Borrar archivo	           rm archivo.tx        del archivo.txt
+Borrar carpeta completa	   rm -rf carpeta/	    rmdir /s /q carpeta
+Listar archivos	           ls	                dir
+Limpiar pantalla	      clear                 cls
+Ver directorio actual	  pwd	                cd (sin argumentos)
+Moverte a otra carpeta 	cd nombre_carpeta	    cd nombre_carpeta (igual)
+Salir de la terminal	exit	                exit (igual)
