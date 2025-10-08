@@ -1,0 +1,21 @@
+como ven todo lleva un proceso primero es crear el repo en github 
+despues iniciar la estancia con "git init"
+
+despues agregar la conexion remota con git remote add origin (url de su repositorio)
+
+luego si ya tienen archivos cargarlos con git add (nombre de o los archivos)
+
+luego hacer tu primer commit con git commit -m "mensaje del commit"
+
+luego hacer push con git push -u origin main 
+
+ya con eso cargarian los archivos, lo que me paso y lo hice en forma visual es por que me dio un error por que no habia guardado los cambios por eso no funciono el git add README solo dio esto 
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+por que no habia ningun cambio
+
+pero fuera de ello es todo 
+
+la forma visual es la siguiente........
