@@ -1,0 +1,6 @@
+git init 
+git add .
+git commit -m "chore: initial commit - react base"
+git brach -M main
+git remote add origin https://github.com/Lopz532/Programadores
+git push -u origin main
