@@ -1,6 +1,6 @@
 git init // co este comando se inicia el repositorio en la carpeta que se encuentra el editor en este caso la carpeta unidad 2 
 
-git remote add origin https://github.com/Lopz532/Programadores.git // este comando es para agregar la conexion remota de su repositorio creado en github debe ser identico ya quie de lo contrario les dara errores si en caso les pasa pueden removerlo con el siguiente comando 
+git remote add origin https://github.com/Lopz532/Programadores.git // este comando es para agregar la conexion remota de su repositorio creado en github debe ser identico ya que de lo contrario les dara errores si en caso les pasa pueden removerlo con el siguiente comando 
 
 git remote remove origin // con este comando remueven la conexion remota 
 
@@ -20,5 +20,5 @@ ATAJOS ctrl + x para borrar
 ATAJOS ctrl + ñ para abrir la terminal 
 ctrl + s para guardar
 
-les explicare si son los mismos comandos para el cmd o powershell ya que copmo ven uso otro tipo de terminal es de git bash 
+les explicare si son los mismos comandos para el cmd o powershell ya que como ven uso otro tipo de terminal es de git bash 
 
