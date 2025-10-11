@@ -9,7 +9,6 @@ luego hacer tu primer commit con git commit -m "mensaje del commit"
 
 luego hacer push con git push -u origin main 
 
-ya con eso cargarian los archivos, lo que me paso y lo hice en forma visual es por que me dio un error por que no habia guardado los cambios por eso no funciono el git add README solo dio esto 
 $ git push -u origin main
 branch 'main' set up to track 'origin/main'.
 Everything up-to-date
