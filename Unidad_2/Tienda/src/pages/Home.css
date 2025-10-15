@@ -1,0 +1,26 @@
+.home-container {
+  padding: 20px;
+}
+
+.productos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.producto-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.producto-img {
+  width: 100%;
+  height: auto;
+}
+
+.precio {
+  font-weight: bold;
+  color: green;
+}
