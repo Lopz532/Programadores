@@ -138,3 +138,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.AllowAny',
     ]
 }
+
+
+CORS_ALLOW_ALL_ORIGINS = True
