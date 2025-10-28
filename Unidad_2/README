@@ -1,23 +1,124 @@
-git init // co este comando se inicia el repositorio en la carpeta que se encuentra el editor en este caso la carpeta unidad 2 
+🧩 Proyecto: Tienda Web (Frontend + Backend)
+📖 Descripción general
 
-git remote add origin https://github.com/Lopz532/Programadores.git // este comando es para agregar la conexion remota de su repositorio creado en github debe ser identico ya que de lo contrario les dara errores si en caso les pasa pueden removerlo con el siguiente comando 
+Este proyecto es una aplicación web completa de tienda en línea, desarrollada con Django en el backend y React (Vite) en el frontend.
+El objetivo es mostrar cómo integrar un sistema de productos con API REST y una interfaz moderna donde se visualicen los artículos disponibles, sus precios y descripciones.
 
-git remote remove origin // con este comando remueven la conexion remota 
+⚙️ Estructura del proyecto
+Proyect/
+│
+├── Unidad_1/   ← Backend con Django
+│   ├── api/              → Aplicación principal (modelo Producto, vistas y rutas)
+│   ├── config/           → Configuración del proyecto Django
+│   ├── db.sqlite3        → Base de datos local
+│   ├── manage.py         → Comando principal del servidor Django
+│   └── requirements.txt  → Dependencias del backend
+│
+└── Unidad_2/   ← Frontend con React + Vite
+    ├── src/
+    │   ├── pages/        → Páginas como Home.jsx
+    │   ├── components/   → Componentes reutilizables
+    │   ├── App.jsx       → Estructura principal del frontend
+    │   └── index.css     → Estilos globales
+    ├── package.json      → Dependencias del frontend
+    └── vite.config.js    → Configuración de desarrollo
 
-git add . // con este al iniciar es el punto por que no se tiene ningun archivo pero en caso contrario es para agregar archivos al commit
+🛠️ Tecnologías utilizadas
+🔹 Backend (Unidad_1)
 
-git commit -m "chore: initial commit - react base" // con este comando se agregan los commits -m significa el mensaje del commit puede ser cualquier cosa pero de preferencia lo que se esta agregando
+Django 5.2.7 → Framework principal para el servidor web.
 
-git branch -M main // este comando renombra la rama principal de tu proyecto de master a main (master se usaba antes en github ahora es main), esto solo se hace una vez
+Django REST Framework → Para construir la API que gestiona los productos.
 
-git push -u origin main // al ya tener agregado archivos en el commit se ejecuta este comando para subir los archivos en el repo de github ya que origin es su lap o donde estan editando y el main es hacia donde se va a subir 
+SQLite3 → Base de datos local para almacenar los datos de productos.
+
+🔹 Frontend (Unidad_2)
+
+React (con Vite) → Framework moderno de JavaScript para crear interfaces rápidas.
+
+Axios → Librería para conectar el frontend con la API del backend.
+
+CSS modular → Para el diseño visual y estilos de los componentes.
+
+🧮 Funcionalidades principales
+🖥️ Frontend (Interfaz del usuario):
+
+Muestra una lista de productos con:
+
+Nombre
+
+Descripción
+
+Precio
+
+Carga los datos dinámicamente desde la API del backend.
+
+Diseño responsivo y adaptable.
+
+⚙️ Backend (Servidor y API):
+
+Proporciona endpoints RESTful:
+
+GET /api/productos/ → Listar todos los productos.
+
+POST /api/productos/ → Agregar nuevos productos.
+
+Permite agregar productos desde el panel admin o la shell de Django.
+
+Retorna los datos en formato JSON para que el frontend los consuma fácilmente.
+
+💡 Ejemplo de datos (desde la API)
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta",
+    "precio": "199.99",
+    "descripcion": "Camiseta de algodón"
+  },
+  {
+    "id": 2,
+    "nombre": "Pants",
+    "precio": "249.50",
+    "descripcion": "Pantalón cómodo"
+  },
+  {
+    "id": 3,
+    "nombre": "Gorra",
+    "precio": "79.00",
+    "descripcion": "Gorra ajustable"
+  }
+]
+
+🚀 Cómo ejecutar el proyecto
+🔧 1. Clonar el repositorio
+git clone https://github.com/TU_USUARIO/programadores.git
+cd Proyect
+
+🖥️ 2. Ejecutar el backend (Unidad_1)
+cd Unidad_1
+python -m venv env
+source env/bin/activate   # o env\Scripts\activate en Windows
+pip install -r requirements.txt
+python manage.py runserver
 
 
+Servidor activo en:
+👉 http://127.0.0.1:8000/api/productos/
 
-ATAJOS ctrl + c para cancelar el comando tambien usado para copiar 
-ATAJOS ctrl + v para pegar
-ATAJOS ctrl + x para borrar
-ATAJOS ctrl + ñ para abrir la terminal 
-ctrl + s para guardar
+🌐 3. Ejecutar el frontend (Unidad_2)
 
-les explicare si son los mismos comandos para el cmd o powershell ya que como ven uso otro tipo de terminal es de git bash
+En otra terminal:
+
+cd Unidad_2
+npm install
+npm run dev
+
+
+Abrir en el navegador:
+👉 http://localhost:5173
+
+👨‍💻 Autores
+
+Jorge López — Desarrollador principal del proyecto
+
+Colaboradores: 0 nulo
